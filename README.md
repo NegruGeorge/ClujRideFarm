@@ -9,6 +9,17 @@ learned to make the app + solidity from Dapp Univesrity: https://www.youtube.com
 
 solidity tutorials: https://cryptozombies.io/
 
+
+Photos:
+stake:
+![alt text](https://github.com/NegruGeorge/ClujRideFarm/blob/master/stake.PNG)
+
+ganache address:
+![alt text](https://github.com/NegruGeorge/ClujRideFarm/blob/master/1.PNG)
+
+Win CBK token and get free rides:
+![alt text](https://github.com/NegruGeorge/ClujRideFarm/blob/master/WInRide.PNG)
+
 Usage
 -----
 
