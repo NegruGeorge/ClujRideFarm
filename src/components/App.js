@@ -84,6 +84,23 @@ class App extends Component {
 
   }
 
+  stakeTokens = (amount) =>{
+    this.setState({loading:true})
+    this.state.leuToken.methods.approve(this.state.rideFarm._address,amount).send({from:this.state.account}).on('transactionHash',(hash)=>{
+      this.state.rideFarm.methods.stakeTokens(amount).send({from:this.state.account}).on('transactionHash',(hash)=>{
+        this.setState({loading:false})
+      })
+    })
+  }
+
+  unstakeTokens = (amount)=>{
+    this.setState({loading:true})
+    this.state.rideFarm.methods.unstakeTokens().send({from:this.state.account}).on('trasnsactionHash',(hash)=>{
+      this.setState({loading:false})
+    })
+  }
+
+
 
   constructor(props) {
     super(props)
@@ -108,6 +125,8 @@ class App extends Component {
       leuTokenBalance = {this.state.leuTokenBalance}
       cBikeTokenBalance = {this.state.cBikeTokenBalance}
       stakingBalance = {this.state.stakingBalance}
+      stakeTokens = {this.stakeTokens}
+      unstakeTokens = {this.unstakeTokens}
 
       
       />

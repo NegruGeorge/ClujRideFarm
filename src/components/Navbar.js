@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import bike from '../imgs/biciii.jpg'
+import bike from '../imgs/bicycle.png'
 
 class Navbar extends Component {
 
